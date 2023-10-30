@@ -18,6 +18,7 @@ import org.eclipse.digitaltwin.basyx.http.pagination.Base64UrlEncodedCursor;
 import org.eclipse.digitaltwin.basyx.http.pagination.PagedResult;
 import org.eclipse.digitaltwin.basyx.http.pagination.PagedResultPagingMetadata;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -40,7 +41,9 @@ public class ConceptDescriptionRepositoryApiHTTPController implements ConceptDes
 	private ConceptDescriptionRepositoryFilter repoFilter;
 
 	@Autowired
-	public ConceptDescriptionRepositoryApiHTTPController(ConceptDescriptionRepository conceptDescriptionRepository, ObjectMapper objectMapper) {
+
+	public ConceptDescriptionRepositoryApiHTTPController(@Qualifier("conceptDescriptionRepository") ConceptDescriptionRepository conceptDescriptionRepository,
+			ObjectMapper objectMapper) {
 		this.objectMapper = objectMapper;
 		this.repository = conceptDescriptionRepository;
 		repoFilter = new ConceptDescriptionRepositoryFilter(repository);

@@ -57,6 +57,7 @@ import org.eclipse.digitaltwin.basyx.submodelrepository.http.pagination.GetSubmo
 import org.eclipse.digitaltwin.basyx.submodelservice.value.SubmodelElementValue;
 import org.eclipse.digitaltwin.basyx.submodelservice.value.SubmodelValueOnly;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpStatus;
@@ -76,7 +77,7 @@ public class SubmodelRepositoryApiHTTPController implements SubmodelRepositoryHT
 	private SubmodelRepository repository;
 
 	@Autowired
-	public SubmodelRepositoryApiHTTPController(SubmodelRepository repository) {
+	public SubmodelRepositoryApiHTTPController(@Qualifier("submodelRepository") SubmodelRepository repository) {
 		this.repository = repository;
 	}
 

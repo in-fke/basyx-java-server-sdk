@@ -44,7 +44,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ConceptDescriptionRepositoryConfiguration {
 
-	@Bean
+	@Bean(name = "conceptDescriptionRepository")
 	public static ConceptDescriptionRepository getConceptDescriptionRepository(ConceptDescriptionRepositoryFactory aasRepositoryFactory, List<ConceptDescriptionRepositoryFeature> features) {
 		return new DecoratedConceptDescriptionRepositoryFactory(aasRepositoryFactory, features).create();
 	}
