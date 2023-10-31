@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import org.eclipse.digitaltwin.aas4j.v3.dataformat.core.visitor.AssetAdministrationShellElementWalkerVisitor;
+import org.eclipse.digitaltwin.aas4j.v3.dataformat.core.internal.visitor.AssetAdministrationShellElementWalkerVisitor;
 import org.eclipse.digitaltwin.aas4j.v3.model.AnnotatedRelationshipElement;
 import org.eclipse.digitaltwin.aas4j.v3.model.BasicEventElement;
 import org.eclipse.digitaltwin.aas4j.v3.model.ConceptDescription;
