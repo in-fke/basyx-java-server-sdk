@@ -1,4 +1,4 @@
-package org.eclipse.digitaltwin.basyx.core;
+package org.eclipse.digitaltwin.basyx.springcore;
 
 import java.io.IOException;
 import java.util.List;

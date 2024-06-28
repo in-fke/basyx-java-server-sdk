@@ -20,6 +20,11 @@
 	</properties>
 
 	<dependencies>
+		<!-- for LoggingPropertySourceLoader in spring.factories -->
+		<dependency>
+			<groupId>org.eclipse.digitaltwin.basyx</groupId>
+			<artifactId>basyx.springcore</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.eclipse.digitaltwin.basyx</groupId>
 			<artifactId>basyx.submodelrepository-core</artifactId>
