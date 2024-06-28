@@ -18,6 +18,7 @@
 		<module>basyx.http</module>
 		<module>basyx.mqttcore</module>
 		<module>basyx.mongocore</module>
+		<module>basyx.springcore</module>
 		<module>basyx.authorization</module>
 		<module>basyx.client</module>
 		<module>basyx.filerepository-backend</module>

@@ -1,1 +1,1 @@
-org.springframework.boot.env.PropertySourceLoader=org.eclipse.digitaltwin.basyx.core.LoggingPropertySourceLoader
+org.springframework.boot.env.PropertySourceLoader=org.eclipse.digitaltwin.basyx.springcore.LoggingPropertySourceLoader

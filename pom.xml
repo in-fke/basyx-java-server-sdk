@@ -439,6 +439,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.digitaltwin.basyx</groupId>
+				<artifactId>basyx.springcore</artifactId>
+				<version>${revision}</version>
+			</dependency>			
+			<dependency>
+				<groupId>org.eclipse.digitaltwin.basyx</groupId>
 				<artifactId>basyx.mqttcore</artifactId>
 				<version>${revision}</version>
 			</dependency>
@@ -1176,16 +1181,6 @@
 			<dependency>
 				<groupId>org.eclipse.digitaltwin.basyx</groupId>
 				<artifactId>basyx.client</artifactId>
-				<version>${revision}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.digitaltwin.basyx</groupId>
-				<artifactId>basyx.aasservice-client</artifactId>
-				<version>${revision}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.digitaltwin.basyx</groupId>
-				<artifactId>basyx.submodelservice-client</artifactId>
 				<version>${revision}</version>
 			</dependency>
 			<dependency>

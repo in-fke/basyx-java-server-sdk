@@ -2,28 +2,21 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<groupId>org.eclipse.digitaltwin.basyx</groupId>
 		<artifactId>basyx.common</artifactId>
 		<version>${revision}</version>
 	</parent>
-	<artifactId>basyx.filerepository-backend-inmemory</artifactId>
+
+	<artifactId>basyx.springcore</artifactId>
+	<name>BaSyx Spring Core</name>
+	<description>BaSyx Spring Core</description>
+	
 	<dependencies>
 		<dependency>
-			<groupId>org.eclipse.digitaltwin.basyx</groupId>
-			<artifactId>basyx.core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.digitaltwin.basyx</groupId>
-			<artifactId>basyx.filerepository-backend</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
+			<artifactId>spring-boot</artifactId>
 		</dependency>
 	</dependencies>
 </project>
